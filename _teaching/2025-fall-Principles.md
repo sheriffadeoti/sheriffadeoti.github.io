@@ -2,9 +2,9 @@
 title: "Teaching experience 1"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
+permalink: /teaching/2025-fall-principles
 venue: "University 1, Department"
-date: 2025 Fall
+date: 2025-08-18
 location: "Raleigh, NC"
 ---
 

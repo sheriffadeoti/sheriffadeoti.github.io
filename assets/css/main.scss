@@ -1,14 +1,48 @@
 ---
-# Only the main Sass file needs front matter (the dashes are required for Jekyll to process)
 ---
 
-@charset "utf-8";
+/*
+ * This file controls what is imported from /_sass
+ *
+ * Note that the files are processed in the order they are imported, so they are partly
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ */
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
-@import "minimal-mistakes";
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+@import
+    "vendor/breakpoint/breakpoint",
+
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+    "layout/base",
+
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv"
+;
 
 /* ===== Custom theme overrides ===== */
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+/* Re-point the template's light-theme color variables at the custom palette.
+   html[data-theme="dark"] is more specific than :root, so dark mode still works. */
 
 :root {
   --bg: #FAFAF7;
@@ -17,49 +51,46 @@
   --link: #2C5F5A;
   --rule: #DAD4C5;
   --muted: #5C6670;
+
+  --global-base-color                : var(--accent);
+  --global-bg-color                  : var(--bg);
+  --global-text-color                : var(--ink);
+  --global-text-color-light          : var(--muted);
+  --global-link-color                : var(--link);
+  --global-link-color-hover          : var(--accent);
+  --global-link-color-visited        : var(--link);
+  --global-masthead-link-color       : var(--ink);
+  --global-masthead-link-color-hover : var(--accent);
+  --global-border-color              : var(--rule);
 }
 
 body {
-  background-color: var(--bg) !important;
-  color: var(--ink) !important;
-  font-family: "Source Sans 3", -apple-system, sans-serif !important;
+  font-family: "Source Sans 3", -apple-system, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6,
 .page__title,
-.author__name {
-  font-family: "Source Serif 4", Georgia, serif !important;
-  color: var(--ink) !important;
-}
-
-a {
-  color: var(--link) !important;
-}
-a:hover {
-  color: var(--accent) !important;
-}
-
-.masthead {
-  background-color: var(--bg) !important;
-  border-bottom: 2px solid var(--accent) !important;
-}
-
+.author__name,
 .site-title {
-  font-family: "Source Serif 4", Georgia, serif !important;
-  color: var(--ink) !important;
+  font-family: "Source Serif 4", Georgia, serif;
 }
 
-.author__bio {
-  color: var(--muted) !important;
-}
+html:not([data-theme="dark"]) {
+  .masthead {
+    border-bottom: 2px solid var(--accent);
+  }
 
-.sidebar {
-  border-right: 1px solid var(--rule) !important;
-}
+  .btn--primary {
+    background-color: var(--accent);
+  }
+  .btn--primary:hover {
+    background-color: var(--link);
+  }
 
-.btn--primary {
-  background-color: var(--accent) !important;
-}
-.btn--primary:hover {
-  background-color: var(--link) !important;
+  /* Sidebar divider only on wide screens; on phones the sidebar stacks above the content. */
+  @include breakpoint($large) {
+    .sidebar {
+      border-right: 1px solid var(--rule);
+    }
+  }
 }
