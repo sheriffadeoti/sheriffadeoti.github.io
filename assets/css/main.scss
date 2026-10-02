@@ -1,0 +1,65 @@
+---
+# Only the main Sass file needs front matter (the dashes are required for Jekyll to process)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* ===== Custom theme overrides ===== */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #FAFAF7;
+  --ink: #1E2A32;
+  --accent: #7A5C2E;
+  --link: #2C5F5A;
+  --rule: #DAD4C5;
+  --muted: #5C6670;
+}
+
+body {
+  background-color: var(--bg) !important;
+  color: var(--ink) !important;
+  font-family: "Source Sans 3", -apple-system, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.author__name {
+  font-family: "Source Serif 4", Georgia, serif !important;
+  color: var(--ink) !important;
+}
+
+a {
+  color: var(--link) !important;
+}
+a:hover {
+  color: var(--accent) !important;
+}
+
+.masthead {
+  background-color: var(--bg) !important;
+  border-bottom: 2px solid var(--accent) !important;
+}
+
+.site-title {
+  font-family: "Source Serif 4", Georgia, serif !important;
+  color: var(--ink) !important;
+}
+
+.author__bio {
+  color: var(--muted) !important;
+}
+
+.sidebar {
+  border-right: 1px solid var(--rule) !important;
+}
+
+.btn--primary {
+  background-color: var(--accent) !important;
+}
+.btn--primary:hover {
+  background-color: var(--link) !important;
+}
