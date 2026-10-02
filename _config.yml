@@ -22,20 +22,18 @@ repository               : "academicpages/academicpages.github.io"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  # Biographic information
-  avatar           : "profile.png"
-  name             : "Sheriff Adeoti"
-  pronouns         : # example: "he/him"  
-  bio              : "PhD Candidate, North Carolina State University. Fields: Energy & Environmental Economics"
-  location         : "Raleigh, NC"
-  employer         : "North Carolina State University"
-  uri              : # URL
-  email            : "soadeoti@ncsu.edu" 
+  name: "Sheriffdeen \"Sheriff\" Adeoti"
+  bio: "North Carolina State University. Fields: Energy & Environmental Economics"
+  location: "Raleigh, NC"
+  employer: "North Carolina State University"
+  email: "soadeoti@ncsu.edu"
+  googlescholar: "https://scholar.google.co.uk/citations?user=-zDO0CMAAAAJ&hl=nl"   # add once you have a profile
+  github_username: sheriffadeoti
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?hl=en&user=-zDO0CMAAAAJ"
+  googlescholar    : "https://scholar.google.co.uk/citations?user=-zDO0CMAAAAJ&hl=nl"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : "https://orcid.org/yourorcidurl"
