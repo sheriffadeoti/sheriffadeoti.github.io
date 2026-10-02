@@ -7,5 +7,7 @@ authors: 'Adeoti, S.O.'
 venue: 'Working paper'
 date: 2026-01-03
 excerpt: 'This paper investigates the relationship between digital infrastructure expansion (e.g., data centers) and electricity grid constraints, with implications for siting and investment decisions.'
+link: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6909459'
+ssrn: '6909459'
 ---
 This paper investigates the relationship between digital infrastructure expansion (e.g., data centers) and electricity grid constraints, with implications for siting and investment decisions.
