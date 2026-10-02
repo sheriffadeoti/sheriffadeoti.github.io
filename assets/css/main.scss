@@ -194,3 +194,18 @@ h1, h2, h3, h4, h5, h6,
 .page__footer {
   border-top: 3px solid var(--forest);
 }
+
+/* Let long sidebar items (e.g. employer) wrap instead of being clipped,
+   with the wrapped line aligned after the icon. */
+.author__urls li {
+  white-space: normal;
+}
+.author__urls li,
+.author__urls li a {
+  display: flex;
+  align-items: baseline;
+}
+.author__urls li > i,
+.author__urls li a > i {
+  flex: none;
+}

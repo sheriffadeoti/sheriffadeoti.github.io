@@ -23,9 +23,9 @@ Publications
 ======
 **Peer-reviewed**
 
-* Shodunke, A., Oladipupo, S.O., & Adeoti, S.O. (2023). "COVID-19 Pandemic Policing and Public (Non)Compliant Behavior: Dataset from Nigeria." *BMC Research Notes*.
-* Godwin, O.W., Khosh, A.N., & Adeoti, S.O. (2023). "Aiding Fragility or Stability? The Impact of Foreign Assistance on Government Effectiveness and Violence in Afghanistan." *International Journal of Commerce and Finance*.
-* Akanbi, S.B., & Adeoti, S.O. (2023). "Monetary Policy and Economic Performance in Sub-Saharan Africa." *African Journal of Economic Review*.
+* Shodunke, A., Oladipupo, S.O., & Adeoti, S.O. (2023). "COVID-19 Pandemic Policing and Public (Non)Compliant Behavior: Dataset from Nigeria." *BMC Research Notes*. [doi:10.1186/s13104-023-06350-x](https://doi.org/10.1186/s13104-023-06350-x)
+* Godwin, O.W., Khosh, A.N., & Adeoti, S.O. (2023). "Aiding Fragility or Stability? The Impact of Foreign Assistance on Government Effectiveness and Violence in Afghanistan." *International Journal of Commerce and Finance*, 9(2), 55–72. [Article](https://ijcf.ticaret.edu.tr/index.php/ijcf/article/view/348)
+* Akanbi, S.B., & Adeoti, S.O. (2023). "Monetary Policy and Economic Performance in Sub-Saharan Africa." *African Journal of Economic Review*. [doi:10.22004/ag.econ.330412](https://doi.org/10.22004/ag.econ.330412)
 * Oyadeyi, O.O., Adeoti, S.O., & Ajayi, O.D. (2026). "The Effects of Geopolitical Risks and Economic Policy Uncertainty on Bank Profitability and Stability in Nigeria." Forthcoming.
 
 **Working papers**
